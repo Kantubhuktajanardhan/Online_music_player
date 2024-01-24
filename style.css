@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(images/banner1.jpg);
+    background-size: contain;
+}
+
+/* Navbar */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    width: 200px;
+    background-color: azure;
+    color: black;
+    padding: 20px 0px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: skyblue;
+}
+
+.track {
+    list-style-type: none;
+    display: none;
+}
+
+.dropdown li:nth-child(3):hover .track {
+    display: block;
+}
+
+.brand {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.welcome {
+    color: rgba(24, 76, 220, 0.758)
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.heading {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.para {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* About */
+.about {
+    display: flex;
+    background-color: rgba(9, 32, 97, 0.758);
+}
+
+/* rgba(24, 59, 155, 0.758) */
+
+.text {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    border: 1px solid rgba(17, 56, 164, 0.758);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(17, 60, 179, 0.758);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.heading1 {
+    margin-bottom: 30px;
+    line-height: 2;
+    font-size: 1.8rem;
+
+}
+
+.para1 {
+    margin: 10px;
+    margin-bottom: 50px;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 2px 10px 2px;
+    text-decoration: none;
+    margin-left: 40%;
+}
+
+.btn2 {
+    margin-left: 45%;
+}
+
+/* Slide */
+.slide img {
+    width: 100%;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.heading2 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.small {
+    margin-top: 0px;
+    font-size: 2.5rem;
+}
+
+.para2 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    margin-left: 28%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    color: white;
+}
+
+.info {
+    line-height: 2;
+    font-size: 20px;
+}
+
+.mail {
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.mail h2 {
+    margin-bottom: 20px;
+}
+
+.btn1 {
+    background: #11cdd4;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 2px 10px 2px;
+    text-decoration: none;
+}
+
+/* Chatbot */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid blue;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: blue;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: red;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn1:hover,
+.open-button:hover {
+    opacity: 1;
+}
